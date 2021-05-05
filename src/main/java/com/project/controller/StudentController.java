@@ -34,7 +34,6 @@ public class StudentController {
         List<StudentBo> list = new ArrayList<>();
         StudentBo bo = cacheService.getStudentById(Integer.valueOf(request
                 .getParameter("id")));
-
         return bo.getAge();
     }
 
